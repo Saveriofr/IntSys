@@ -7,7 +7,11 @@
   overflow: hidden;
 }
 
-.li {
-  color: black;
-  font: Serif;
+body {
+  font-family: 'Noto+Serif';
+  font-size: 17px;
+}
+
+.slide {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
