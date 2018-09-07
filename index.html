@@ -51,7 +51,7 @@
       </div>
       <a href="#home"><img class="responsive-img" src="img/Logo international System.gif"></a>
 
-    
+
   </li>
         <li>
          <a class="indigo-text text-darken-4" href="#home"><h4>Home</h4> </a>
@@ -316,7 +316,7 @@
       <!--section gallery-->
       <section id="gallery" class="section section-gallery scrollspy">
           <div class="row blue lighten-4 z-depth-1">
-              <div class="col s12 blue lighten-4 z-depth-1 center "><span class="indigo-text text-darken-4 flow-text center-align">IMAGE GALLERY</span></div>
+              <div class="col s12 blue lighten-4 z-depth-1 center "><span class="indigo-text text-darken-4 flow-text center-align"> <h5> IMAGE GALLERY</h5></span></div>
 
             </div>
             <div class="col s12 z-depth-1 center "><span class="indigo-text text-darken-4 flow-text center-align">Civil</span>
@@ -350,8 +350,8 @@
 
             </div>
 
-            <div class="carousel grey lighten-4 z-depth-1">
-              <a class="carousel-item" href="#one!"><img src="img/trat.jpg"></a>
+            <div class="col s12 carousel grey lighten-4 z-depth-1">
+              <a class="carousel-item" href="#one!"><img class="responsive-img materialboxed" src="img/trat.jpg"></a>
               <a class="carousel-item" href="#one!"><img class="responsive-img materialboxed" src="img/naval/20160903_162341.JPG"></a>
               <a class="carousel-item" href="#two!"><img class="responsive-img materialboxed" src="img/naval/20160912_094105.jpg"></a>
               <a class="carousel-item" href="#three!"><img class="responsive-img materialboxed" src="img/naval/20160912_094122.jpg"></a>
@@ -377,7 +377,7 @@
 
             </div>
 
-            <div class="carousel grey lighten-4 z-depth-1">
+            <div class="col s12 carousel grey lighten-4 z-depth-1">
               <a class="carousel-item" href="#one!"><img class="responsive-img materialboxed" src="img/artistic/100_0409.jpg"></a>
               <a class="carousel-item" href="#two!"><img class="responsive-img materialboxed" src="img/artistic/100_0410.jpg"></a>
               <a class="carousel-item" href="#three!"><img class="responsive-img materialboxed" src="img/artistic/100_0411.jpg"></a>
@@ -574,12 +574,13 @@
       const ss = document.querySelectorAll('.scrollspy');
       M.ScrollSpy.init(ss, {});
 
+      //collapsible
+      const elems = document.querySelectorAll('.collapsible');
+      const instances = M.Collapsible.init(elems, {});
 
-    const elems = document.querySelectorAll('.collapsible');
-    const instances = M.Collapsible.init(elems, {});
-
-    const caro = document.querySelectorAll('.carousel');
-    const inst = M.Carousel.init(caro, {});
+      //carousel
+      const caro = document.querySelectorAll('.carousel');
+      const inst = M.Carousel.init(caro, {});
 
     </script>
       </body>
